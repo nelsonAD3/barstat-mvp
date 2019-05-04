@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>barstat - boston</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>barstat</h1>
+        <p class="instructions-p">select Lucky's Lounge, Scorpion Bar, The Broadway, or Lincoln Tavern for info</p>
+
+        <div id="map" style="width:100%;height:400px;"></div>
+        <div id="infowindow-content">
+            <img id="place-icon" src="" height="16" width="16">
+            <span id="place-name" class="title"></span><br>
+            <span id="place-address"></span>
+            <span id="occupancy-percent-now"></span>
+        </div>
+
+        <section class="request-feed" style="width:100%;height:400px;">
+            <ul class="request-list"></ul>
+            <li>
+                <!-- <div class="info-div">
+                    <p>Lucky's Lounge ~</p>
+                    <p>355 Congress St, Boston, MA 02210</p>
+                </div>
+                
+                <div class="form-div">
+                    <form id = "remove-element">
+                        <input class="location-input" type="submit" value="Remove Location"></button>
+                    </form>
+                    <div class="div-times">
+                        <span id="span-times">Currently: 90% Full, 10PM: 100%, 11PM: 97%, Midnight: 90%, 1AM: 76% </span>
+                    </div>
+
+                    <form id = "location-form-check">
+                        <input class="location-input" type="submit" value="Check Occupancy Data"></button>
+                    </form>
+                </div> -->
+                
+            </li>
+
+        </section>
+
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLitrI4IesoEkUFm3dvuRVq4u15w44H_4&callback=initMap&libraries=places">
+            </script>
+
+    
+    <script src="index.js"></script>
+    <script src="occ_db.js"></script>
+</body>
+
+</html>

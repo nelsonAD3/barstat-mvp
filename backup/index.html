@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>barstat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>barstat</h1>
+        <p class="instructions-p">allow the browser to access your location, find a bar and tap on it for more info.</p>
+
+        <div id="map" style="width:100%;height:400px;"></div>
+        <div id="infowindow-content">
+                <img id="place-icon" src="" height="16" width="16">
+                <span id="place-name"  class="title"></span><br>
+                Place ID <span id="place-id"></span><br>
+                <span id="place-address"></span>
+              </div>
+
+            
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLitrI4IesoEkUFm3dvuRVq4u15w44H_4&callback=initMap&libraries=places">
+</script>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

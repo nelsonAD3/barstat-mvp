@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #263c3f;
+
+  }
+  
+  button, input[type="text"] {
+    padding: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+      color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #map {
+    height: 100%;
+    background:white;
+  }
+
+  .gm-style-iw-d{
+    color:#696969;
+  }
+
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    color: #fffafa;
+  }
+
+  p{
+    color: #fffafa;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+  #infowindow-content {
+    display: none;
+  }
+  #map #infowindow-content {
+    display: inline;
+  }
